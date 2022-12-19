@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app_bigdiv{
+  width: 100%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app_minidiv{
+  width: 450px;
+  max-width: 100%;
+  background-color: rgb(63, 97, 161);
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 5px;
+  padding-bottom: 50px;
+
+}
+.app_minidiv h1{
+  padding: 20px 0px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app_formdiv{
+  display: flex;
 }
+.app_minidiv input{
+  width: 300px;
+  max-width: 100%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+}
+.app_minidiv button{
+  padding: 9px 20px;
+  margin: 0px 5px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  border: 1px solid cornflowerblue;
+  transition: 0.6s;
+}
+.app_minidiv button:hover{
+  border: 1px solid white;
+}
+.app_resultdiv{
+  width: 372px;
+  max-width: 100%;
+}
+.app_resultdiv ul li{
+  width: 100%;
+  padding: 4px 0px 4px 10px;
+  margin: 8px 0px;
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.app_resultdiv ul li button{
+  border: 1px solid rgb(63, 97, 161);
+  background-color: rgb(63, 97, 161) ;
+  transition: 0.6s;
+}
+.app_resultdiv ul li button:hover{
+  border: 1px solid white;
 }
